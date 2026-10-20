@@ -16,6 +16,15 @@ Table #13
 4. Our metaphor: a class is like a job description, and a Component is an employee hired from that description and assigned to a specific store, which is the GameObject. One job description can be used to hire many employees for different stores. Member variables are each employee's traits, like their name or work speed, which can be different for each employee, just like values tuned in the Inspector. Methods are the tasks the employee can do, like ringing up customers or restocking shelves.
 5. The balls get extremely bright because every time a ball bounces fast enough, its color is multiplied by 1.5, and there is no maximum limit. Color values normally go from 0 to 1, but multiplying again and again makes them grow quickly past 1 (0.5, 0.75, 1.13, 1.69, 2.53...). Since Step 1 also makes the balls faster with every bounce, they soon stay above the speed threshold and get brighter on every bounce. The cat gets brighter too because it copies the color of the ball that hits it.
 
+### W4
+
+#### Activity 1
+Table 13
+
+Q1: We added Rigidbodies to the Cat and the SoccerBall, because both of them need to move with physics — the cat kicks the ball, and both need to bounce off the wall. We checked Is Trigger only on the Goal, because the ball needs to pass through it while still detecting that it entered the goal area. The Goal doesn't move, so it doesn't need a Rigidbody.
+
+Q2: It worked the first time we tested it.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
