@@ -21,11 +21,11 @@ Table #13
 #### Activity 1
 Table 17
 
-Q1: We added Rigidbodies to the Cat and the SoccerBall, because both of them need to move with physics — the cat kicks the ball, and both need to bounce off the wall. We checked Is Trigger only on the Goal, because the ball needs to pass through it while still detecting that it entered the goal area. The Goal doesn't move, so it doesn't need a Rigidbody.
+Q1: We added Rigidbodies to the Cat and the SoccerBall, because both of them need to move with physics, the cat kicks the ball, and both need to bounce off the wall. We checked Is Trigger only on the Goal, because the ball needs to pass through it while still detecting that it entered the goal area. The Goal doesn't move, so it doesn't need a Rigidbody.
 
 Q2: It worked the first time we tested it.
 
-### W6(W5)
+### W5
 
 #### Activity 1
 
