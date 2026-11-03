@@ -25,6 +25,17 @@ Q1: We added Rigidbodies to the Cat and the SoccerBall, because both of them nee
 
 Q2: It worked the first time we tested it.
 
+### W6(W5)
+
+#### Activity 1
+
+Q1: The class needs two member variables. One is a Transform called target, which is the object the deer walks to. It is set in the Inspector. The other is a NavMeshAgent called agent, which stores the NavMeshAgent component on the Deer.
+
+Q2: It only needs Start(), which Unity provides. We only need to tell the deer where to go once, when the game begins, so we don't need Update().
+
+Q3: In Start(), we use GetComponent<NavMeshAgent>() to get the agent from the Deer. Then we call agent.SetDestination(target.position) so the deer walks to the target on the NavMesh.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
