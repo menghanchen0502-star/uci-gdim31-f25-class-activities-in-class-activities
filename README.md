@@ -35,7 +35,7 @@ Q2: It only needs Start(), which Unity provides. We only need to tell the deer w
 
 Q3: In Start(), we use GetComponent<NavMeshAgent>() to get the agent from the Deer. Then we call agent.SetDestination(target.position) so the deer walks to the target on the NavMesh.
 
-### W6
+### W7
 
 #### Activity 1
 
