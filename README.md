@@ -55,7 +55,7 @@ Q3: Awake() uses GameObject.Find("Cat") to get the player's Transform. Update() 
 
 Part 1: We added a temporary Start() that calls StartChasing(), so all of the bats chased the cat as soon as the game loaded.
 
-Part 2: We removed Start() so the bats stay still by default. In BatManager, a for loop checks the distance between each bat and the cat with Vector3.Distance. If the distance is less than _interactDistance, the bat chases the cat, otherwise it stops. If the distance is less than _overlapDistance, the bat shows a random message from the _messages array. I used GetComponentsInChildren<BatW6>() in Start() to fill the _bats array automatically, instead of dragging all 10 bats into the Inspector.
+Part 2: We removed Start() so the bats stay still by default. In BatManager, a for loop checks the distance between each bat and the cat with Vector3.Distance. If the distance is less than _interactDistance, the bat chases the cat, otherwise it stops. If the distance is less than _overlapDistance, the bat shows a random message from the _messages array. I used GetComponentsInChildren<BatW6>() in Start() to fill the _bats array automatically, instead of dragging all 10 bats into the Inspector. In my final code, EnableChase() and DisableChase() are named StartChasing() and StopChasing(), and they use an _isChasing bool instead of enabling and disabling the component.
 
 ## Open-Source Assets
 ### W1
