@@ -35,6 +35,27 @@ Q2: It only needs Start(), which Unity provides. We only need to tell the deer w
 
 Q3: In Start(), we use GetComponent<NavMeshAgent>() to get the agent from the Deer. Then we call agent.SetDestination(target.position) so the deer walks to the target on the NavMesh.
 
+### W6
+
+#### Activity 1
+
+Table: 10
+
+My category assignment: Unity engine and Other tools.
+
+Shared Google Doc: https://docs.google.com/document/d/1Fn9TGFlxzcsuaW2vjqgng_0IyirIMh9iUS6c1-b-k7M/edit?tab=t.0
+
+#### Activity 2
+
+Q1: The BatW6 class needs three member variables. A public float called speed, so we can tune how fast the bat moves in the Inspector. A bool called _isChasing, which stores whether the bat is chasing right now. A Transform called _cat, which stores the player so the bat knows where to move.
+
+Q2: It needs Awake() and Update(), which Unity provides, and StartChasing() and StopChasing(), which we write. Awake() finds the Cat once when the game loads, and Update() runs every frame so the bat can keep moving. StartChasing() and StopChasing() are public so the BatManager can call them.
+
+Q3: Awake() uses GameObject.Find("Cat") to get the player's Transform. Update() only moves the bat if _isChasing is true, using Vector3.MoveTowards with speed * Time.deltaTime so the speed is the same on every computer. StartChasing() sets _isChasing to true, and StopChasing() sets it to false.
+
+Part 1: We added a temporary Start() that calls StartChasing(), so all of the bats chased the cat as soon as the game loaded.
+
+Part 2: We removed Start() so the bats stay still by default. In BatManager, a for loop checks the distance between each bat and the cat with Vector3.Distance. If the distance is less than _interactDistance, the bat chases the cat, otherwise it stops. If the distance is less than _overlapDistance, the bat shows a random message from the _messages array. I used GetComponentsInChildren<BatW6>() in Start() to fill the _bats array automatically, instead of dragging all 10 bats into the Inspector.
 
 ## Open-Source Assets
 ### W1
